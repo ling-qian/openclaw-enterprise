@@ -1,0 +1,21 @@
+Copyright (c) 2026 ling-qian
+
+Enterprise License
+
+This software and associated documentation files (the "Software") are provided
+under a commercial license. The Software includes enterprise features that
+require a paid subscription to use in production.
+
+Community Edition:
+The open-source components of OpenClaw are available under the MIT License.
+See the openclaw/openclaw repository for community edition terms.
+
+Enterprise Edition:
+Enterprise features including but not limited to SSO/SAML integration, RBAC,
+audit logging, SLA support, and private deployment options are available under
+a separate commercial agreement. Contact enterprise@openclaw.dev for pricing
+and terms.
+
+NO WARRANTY: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+For full license terms, contact licensing@openclaw.dev.
