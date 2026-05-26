@@ -7,13 +7,14 @@
 ## 包含 Skills
 
 | Skill | ClawHub Slug | 覆盖范围 |
-|-------|-------------|----------|
-| Malware Incident Response | `conducting-malware-incident-response` | 恶意软件隔离、分析、清除 |
-| Phishing Incident Response | `conducting-phishing-incident-response` | 钓鱼邮件溯源、阻断、用户通知 |
-| Volatile Evidence Collection | `collecting-volatile-evidence-from-compromised-host` | 内存、进程、网络连接取证 |
-| Memory Dump Analysis | `analyzing-memory-dumps-with-volatility` | 内存取证（rootkit/进程注入检测） |
-| Network Traffic Analysis | `analyzing-network-traffic-for-incidents` | PCAP 分析、C2 通信识别 |
-| Threat Intelligence Reports | `generating-threat-intelligence-reports` | IOC 提取、威胁情报关联 |
+|-------|--------------|----------|
+| Incident Response | `incident-response` | 结构化 7 阶段事件响应流程 |
+| Incident Response Network | `incident-response-network` | 网络取证证据收集和分析 |
+| Incident Response Lifecycle | `incident-response-lifecycle` | NIST 800-61 事件响应生命周期管理 |
+| K8s Incident Response | `k8s-incident-response-playbook` | Kubernetes 事件响应 Playbook 生成器 |
+| Agent Incident Response | `greenhelix-agent-incident-response` | AI Agent 系统故障事件响应 Playbook |
+
+**注意**: 原计划包含 6 个 skills，但由于 `afrexai-incident-response-playbook` 在 ClawHub 上不可用，当前使用 5 个可用 skills。这些 skills 覆盖了事件响应的核心功能。
 
 ---
 

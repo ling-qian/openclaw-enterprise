@@ -40,15 +40,15 @@ openclaw --version
 
 ```bash
 # 安装所有渗透测试相关 skills
-openclaw skills install conducting-network-penetration-test
-openclaw skills install conducting-api-security-testing
-openclaw skills install conducting-cloud-penetration-testing
-openclaw skills install conducting-mobile-app-penetration-test
-openclaw skills install performing-web-application-penetration-test
-openclaw skills install exploiting-sql-injection-with-sqlmap
+openclaw skills install ah-penetration-tester
+openclaw skills install pilot-penetration-testing-setup
+openclaw skills install fix-erlang-ssh-cve-ssh-penetration-testing
+openclaw skills install bookforge-web-application-penetration-testing-methodology
+openclaw skills install bookforge-access-control-vulnerability-testing
+openclaw skills install pentest-commands
 
 # 验证安装
-openclaw skills list | grep -E "conducting|performing|exploiting"
+openclaw skills list | grep -E "penetration|pentest|bookforge|fix-erlang"
 ```
 
 ### 3. 安装渗透测试工具

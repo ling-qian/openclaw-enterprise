@@ -41,15 +41,14 @@ openclaw --version
 
 ```bash
 # 安装所有事件响应相关 skills
-openclaw skills install conducting-malware-incident-response
-openclaw skills install conducting-phishing-incident-response
-openclaw skills install collecting-volatile-evidence-from-compromised-host
-openclaw skills install analyzing-memory-dumps-with-volatility
-openclaw skills install analyzing-network-traffic-for-incidents
-openclaw skills install generating-threat-intelligence-reports
+openclaw skills install incident-response
+openclaw skills install incident-response-network
+openclaw skills install incident-response-lifecycle
+openclaw skills install k8s-incident-response-playbook
+openclaw skills install greenhelix-agent-incident-response
 
 # 验证安装
-openclaw skills list | grep -E "conducting|collecting|analyzing|generating"
+openclaw skills list | grep -E "incident-response|k8s|greenhelix"
 ```
 
 ### 3. 安装取证工具

@@ -11,6 +11,7 @@
 | [安全审计自动化](security-audit.md) | 云基础设施配置扫描 + 合规报告 | 20+ 小时/次 | 6 | $2,499 | [安装指南](security-audit-installation.md) |
 | [渗透测试自动化](penetration-test.md) | 端到端渗透测试流程 | 40+ 小时/次 | 6 | $3,499 | [安装指南](penetration-test-installation.md) |
 | [事件响应自动化](incident-response.md) | 事件取证 + 攻击链分析 + 报告 | 8+ 小时/次 | 6 | $2,999 | [安装指南](incident-response-installation.md) |
+| [客服自动化](customer-service.md) | AI 自动处理客服工单，秒级响应 | $42k/月人力 | 5 | $8,000起/月 | [Demo 脚本](customer-service-demo-script.md) |
 
 **打包优惠**：任意 2 个 8.5 折，3 个全购 7.5 折。
 

@@ -41,14 +41,14 @@ openclaw --version
 ```bash
 # 安装所有审计相关 skills
 openclaw skills install auditing-aws-s3
-openclaw skills install auditing-azure-ad
+openclaw skills install sx-security-audit-1-0-0
 openclaw skills install auditing-cis-benchmarks
-openclaw skills install auditing-gcp-iam
+openclaw skills install security-audit
 openclaw skills install auditing-k8s-rbac
 openclaw skills install auditing-terraform-security
 
 # 验证安装
-openclaw skills list | grep auditing
+openclaw skills list | grep -E "auditing|sx-security|security-audit"
 ```
 
 ### 3. 配置云环境凭证

@@ -7,11 +7,11 @@
 ## 包含 Skills
 
 | Skill | ClawHub Slug | 覆盖范围 |
-|-------|-------------|----------|
+|-------|--------------|----------|
 | AWS S3 Bucket Audit | `auditing-aws-s3` | S3 桶权限、ACL、加密、公开访问 |
-| Azure AD Configuration | `auditing-azure-ad` | Azure Active Directory 安全配置 |
+| Sx Security Audit | `sx-security-audit-1-0-0` | 全方位安全审计：文件权限、环境变量、依赖漏洞等 |
 | Cloud CIS Benchmarks | `auditing-cis-benchmarks` | AWS/Azure/GCP CIS 基准检查 |
-| GCP IAM Permissions | `auditing-gcp-iam` | GCP IAM 权限审计 |
+| Security Audit | `security-audit` | 综合安全审计：凭证暴露、开放端口、弱配置、漏洞 |
 | Kubernetes RBAC Audit | `auditing-k8s-rbac` | K8s 角色、绑定、权限路径 |
 | Terraform Security Audit | `auditing-terraform-security` | IaC 安全扫描（Checkov/tfsec/OPA） |
 

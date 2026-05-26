@@ -7,13 +7,13 @@
 ## 包含 Skills
 
 | Skill | ClawHub Slug | 覆盖范围 |
-|-------|-------------|----------|
-| Network Penetration Test | `conducting-network-penetration-test` | 网络侦察、漏洞利用、横向移动 |
-| API Security Testing | `conducting-api-security-testing` | API 认证/授权/注入测试 |
-| Cloud Penetration Testing | `conducting-cloud-penetration-testing` | 云环境特权提升、元数据利用 |
-| Mobile App Penetration Test | `conducting-mobile-app-penetration-test` | iOS/Android 逆向、存储、网络 |
-| Web App Penetration Test | `performing-web-application-penetration-test` | OWASP Top 10、CSRF、XSS、SSRF |
-| SQL Injection Exploitation | `exploiting-sql-injection-with-sqlmap` | 自动化 SQL 注入检测与利用 |
+|-------|--------------|----------|
+| Pentest Workbench | `ah-penetration-tester` | 专业渗透测试专家，漏洞评估和安全测试 |
+| Penetration Testing Setup | `pilot-penetration-testing-setup` | 部署自动化渗透测试流水线（4 个 agents） |
+| SSH Penetration Testing | `fix-erlang-ssh-cve-ssh-penetration-testing` | SSH 服务渗透测试：枚举、暴力破解、漏洞利用 |
+| Web App Pentest Methodology | `bookforge-web-application-penetration-testing-methodology` | 完整的 Web 应用渗透测试方法论（13 个测试领域） |
+| Access Control Testing | `bookforge-access-control-vulnerability-testing` | 系统化测试 Web 应用访问控制漏洞 |
+| Pentest Commands | `pentest-commands` | 渗透测试命令参考（nmap、Metasploit、hydra 等） |
 
 ---
 
