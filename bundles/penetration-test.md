@@ -1,0 +1,114 @@
+# Bundle 2: 渗透测试自动化
+
+端到端渗透测试流程，从侦察到报告，替代初级安全工程师重复工作 **40+ 小时/次**。
+
+---
+
+## 包含 Skills
+
+| Skill | ClawHub Slug | 覆盖范围 |
+|-------|-------------|----------|
+| Network Penetration Test | `conducting-network-penetration-test` | 网络侦察、漏洞利用、横向移动 |
+| API Security Testing | `conducting-api-security-testing` | API 认证/授权/注入测试 |
+| Cloud Penetration Testing | `conducting-cloud-penetration-testing` | 云环境特权提升、元数据利用 |
+| Mobile App Penetration Test | `conducting-mobile-app-penetration-test` | iOS/Android 逆向、存储、网络 |
+| Web App Penetration Test | `performing-web-application-penetration-test` | OWASP Top 10、CSRF、XSS、SSRF |
+| SQL Injection Exploitation | `exploiting-sql-injection-with-sqlmap` | 自动化 SQL 注入检测与利用 |
+
+---
+
+## 工作流程
+
+```
+输入：目标范围（IP/URL/API 端点）+ 规则（RoE）
+  │
+  ├─ 1. 侦察（Reconnaissance）
+  │     ├─ 端口扫描（nmap/masscan）
+  │     ├─ 子域名枚举（amass/subfinder）
+  │     └─ 技术栈识别（Wappalyzer/whatweb）
+  │
+  ├─ 2. 漏洞发现（Vulnerability Discovery）
+  │     ├─ Web 应用扫描（Nikto/Burp）
+  │     ├─ API 安全测试（Postman/OWASP ZAP）
+  │     └─ SQL 注入检测（SQLMap）
+  │
+  ├─ 3. 漏洞利用（Exploitation）
+  │     ├─ 手动验证（Metasploit/custom）
+  │     ├─ 权限提升路径
+  │     └─ 云元数据利用（AWS/GCP/Azure）
+  │
+  ├─ 4. 后渗透（Post-Exploitation）
+  │     ├─ 横向移动
+  │     ├─ 数据提取（脱敏）
+  │     └─ 持久化检测
+  │
+  └─ 5. 报告（Reporting）
+        ├─ 发现摘要（Executive Summary）
+        ├─ 详细技术分析
+        ├─ CVSS 评分 + 修复建议
+        └─ PoC 截图/日志
+  │
+输出：渗透测试报告（PDF/Markdown）+ 修复跟踪表
+```
+
+---
+
+## 价值量化
+
+| 指标 | 人工渗透测试 | 使用 Bundle | 节省 |
+|------|-------------|-------------|------|
+| 项目周期 | 2-4 周 | 3-5 天 | **80%** |
+| 人力成本（中级工程师 $120/h） | $20,000-40,000 | $3,000-6,000 | **$17,000-34,000** |
+| 覆盖漏洞数量 | 依赖经验 | 系统化覆盖 | — |
+| 报告一致性 | 每人风格不同 | 标准化输出 | — |
+
+---
+
+## 目标客户
+
+- **SaaS 公司**：定期安全评估（季度/年度）
+- **金融科技**：PCI-DSS 要求的渗透测试
+- **大型企业**：红队演练、安全意识培训
+- **安全服务商**：为客户提供渗透测试服务的 MSP/MSSP
+
+---
+
+## 快速开始
+
+```bash
+# 安装
+openclaw skills install conducting-network-penetration-test
+openclaw skills install conducting-api-security-testing
+openclaw skills install conducting-cloud-penetration-testing
+openclaw skills install performing-web-application-penetration-test
+openclaw skills install exploiting-sql-injection-with-sqlmap
+
+# 创建 Agent
+cat > pentest-agent.json << 'EOF'
+{
+  "name": "penetration-tester",
+  "skills": [
+    "conducting-network-penetration-test",
+    "conducting-api-security-testing",
+    "performing-web-application-penetration-test",
+    "exploiting-sql-injection-with-sqlmap"
+  ],
+  "model": "claude-sonnet-4-20250514"
+}
+EOF
+
+# 执行任务
+openclaw tasks submit --agent penetration-tester \
+  --input "对 https://target.example.com 进行 Web 应用渗透测试，覆盖 OWASP Top 10"
+```
+
+---
+
+## 合规与方法论
+
+| 标准 | 说明 |
+|------|------|
+| PTES | Penetration Testing Execution Standard |
+| OWASP Testing Guide v4 | Web 应用安全测试 |
+| NIST SP 800-115 | Technical Guide to Information Security Testing |
+| OSSTMM 3 | Open Source Security Testing Methodology |
