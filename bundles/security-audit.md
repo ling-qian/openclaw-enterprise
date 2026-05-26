@@ -57,7 +57,9 @@
 ```bash
 # 安装所有审计 skills
 openclaw skills install auditing-aws-s3
+openclaw skills install sx-security-audit-1-0-0
 openclaw skills install auditing-cis-benchmarks
+openclaw skills install security-audit
 openclaw skills install auditing-k8s-rbac
 openclaw skills install auditing-terraform-security
 
@@ -67,7 +69,9 @@ cat > audit-agent.json << 'EOF'
   "name": "security-auditor",
   "skills": [
     "auditing-aws-s3",
+    "sx-security-audit-1-0-0",
     "auditing-cis-benchmarks",
+    "security-audit",
     "auditing-k8s-rbac",
     "auditing-terraform-security"
   ],

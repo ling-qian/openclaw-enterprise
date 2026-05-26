@@ -75,31 +75,33 @@
 
 ## 快速开始
 
+## 快速开始
+
 ```bash
-# 安装
-openclaw skills install conducting-network-penetration-test
-openclaw skills install conducting-api-security-testing
-openclaw skills install conducting-cloud-penetration-testing
-openclaw skills install performing-web-application-penetration-test
-openclaw skills install exploiting-sql-injection-with-sqlmap
+# 安装渗透测试 skills
+openclaw skills install ah-penetration-tester
+openclaw skills install pilot-penetration-testing-setup
+openclaw skills install bookforge-web-application-penetration-testing-methodology
 
 # 创建 Agent
 cat > pentest-agent.json << 'EOF'
 {
   "name": "penetration-tester",
   "skills": [
-    "conducting-network-penetration-test",
-    "conducting-api-security-testing",
-    "performing-web-application-penetration-test",
-    "exploiting-sql-injection-with-sqlmap"
+    "ah-penetration-tester",
+    "pilot-penetration-testing-setup",
+    "fix-erlang-ssh-cve-ssh-penetration-testing",
+    "bookforge-web-application-penetration-testing-methodology",
+    "bookforge-access-control-vulnerability-testing",
+    "pentest-commands"
   ],
   "model": "claude-sonnet-4-20250514"
 }
 EOF
 
-# 执行任务
+# 执行渗透测试
 openclaw tasks submit --agent penetration-tester \
-  --input "对 https://target.example.com 进行 Web 应用渗透测试，覆盖 OWASP Top 10"
+  --input "对 staging.finpay.com 执行完整渗透测试，覆盖 Web + API，生成 PCI-DSS 合规报告"
 ```
 
 ---

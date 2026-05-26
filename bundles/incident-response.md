@@ -78,33 +78,34 @@
 ## 快速开始
 
 ```bash
-# 安装
-openclaw skills install conducting-malware-incident-response
-openclaw skills install conducting-phishing-incident-response
-openclaw skills install collecting-volatile-evidence-from-compromised-host
-openclaw skills install analyzing-memory-dumps-with-volatility
-openclaw skills install analyzing-network-traffic-for-incidents
-openclaw skills install generating-threat-intelligence-reports
+## 快速开始
+
+```bash
+# 安装事件响应 skills
+openclaw skills install incident-response
+openclaw skills install incident-response-network
+openclaw skills install incident-response-lifecycle
+openclaw skills install k8s-incident-response-playbook
+openclaw skills install greenhelix-agent-incident-response
 
 # 创建 Agent
-cat > ir-agent.json << 'EOF'
+cat > incident-response-agent.json << 'EOF'
 {
   "name": "incident-responder",
   "skills": [
-    "conducting-malware-incident-response",
-    "conducting-phishing-incident-response",
-    "collecting-volatile-evidence-from-compromised-host",
-    "analyzing-memory-dumps-with-volatility",
-    "analyzing-network-traffic-for-incidents",
-    "generating-threat-intelligence-reports"
+    "incident-response",
+    "incident-response-network",
+    "incident-response-lifecycle",
+    "k8s-incident-response-playbook",
+    "greenhelix-agent-incident-response"
   ],
   "model": "claude-sonnet-4-20250514"
 }
 EOF
 
-# 处理事件
+# 执行事件响应
 openclaw tasks submit --agent incident-responder \
-  --input "主机 10.0.1.50 检测到异常进程，疑似恶意软件。请进行取证分析和根因排查。"
+  --input "workstation-142 检测到 Cobalt Strike beacon，执行完整事件响应流程"
 ```
 
 ---
